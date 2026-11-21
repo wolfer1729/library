@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Granthalaya Library</title>
+  <meta name="description" content="A free library of great novels and stories in English, Hindi and Telugu. Read, listen to audiobooks, have books read aloud, or add your own.">
+  <meta name="theme-color" content="#0f6e66">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/front.css">
+  <script>
+    // Old links like /#/book/<id> belong to the library app.
+    if (/^#\//.test(location.hash)) location.replace('library.html' + location.hash);
+    try {
+      var t = JSON.parse(localStorage.getItem('appTheme') || 'null');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body class="front">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="./"><img src="img/icon.svg" alt=""><span class="brand-name" data-t="appName">Granthalaya</span></a>
+    <nav class="f-nav" aria-label="Sections">
+      <a href="#languages" data-t="navLanguages">Languages</a>
+      <a href="#featured" data-t="navFeatured">Featured</a>
+      <a href="#genres" data-t="navGenres">Genres</a>
+      <a href="#sources" data-t="navHow">How it works</a>
+    </nav>
+    <div class="top-actions">
+      <div class="seg" role="group" data-ui-seg></div>
+      <button type="button" class="icon-btn" data-theme-toggle></button>
+      <a class="btn" href="library.html" data-lib="" data-t-title="openLibrary">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>
+        <span class="label" data-t="openLibrary">Open the library</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="f-banner" data-file-banner hidden>
+    <div class="wrap f-banner-inner">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <div><b data-t="serverTitle">Start the library first</b> <span data-th="serverHelp"></span></div>
+      <a class="btn btn-sm" href="http://localhost:3000/" data-t="openLocalhost">Open localhost:3000</a>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <section class="f-hero wrap">
+      <div class="f-glyphs" aria-hidden="true"><span>A</span><span>अ</span><span>అ</span></div>
+      <div class="f-hero-text">
+        <span class="f-eyebrow" data-t="eyebrow">A free library in three languages</span>
+        <h1 data-th="heroTitle">Read the world’s great books in <em>English, हिन्दी &amp; తెలుగు</em></h1>
+        <p class="f-sub" data-t="heroSub"></p>
+        <div class="f-ctas">
+          <a class="btn btn-lg" href="library.html" data-lib="">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-t="openLibrary">Open the library</span>
+          </a>
+          <a class="btn btn-lg btn-ghost" href="library.html#/add" data-lib="/add">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M20 16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"/></svg>
+            <span data-t="addOwn">Add your own book</span>
+          </a>
+        </div>
+        <div class="f-stats">
+          <div class="stat"><b data-stat="total">281</b><span data-t="statBooks">books &amp; stories</span></div>
+          <div class="stat"><b data-stat="readable">239</b><span data-t="statReadable">free to read now</span></div>
+          <div class="stat"><b>3</b><span data-t="statLanguages">languages</span></div>
+          <div class="stat"><b data-stat="genres">17</b><span data-t="statGenres">genres</span></div>
+        </div>
+      </div>
+      <div class="f-stack" data-hero-covers aria-hidden="true"></div>
+    </section>
+
+    <section class="f-section f-band" id="languages">
+      <div class="wrap">
+        <div class="f-head">
+          <h2 data-t="langTitle">Choose your language</h2>
+          <p data-t="langSub"></p>
+        </div>
+        <div class="f-langs">
+          <a class="f-lang" data-l="en" href="library.html#/?lang=en" data-lib="/?lang=en" lang="en">
+            <span class="glyph" aria-hidden="true">A</span>
+            <h3>English</h3>
+            <span class="count" data-lang-count="en"></span>
+            <span class="authors">Jane Austen · Charles Dickens · Conan Doyle · Rabindranath Tagore · Rudyard Kipling</span>
+            <span class="btn">Browse English books</span>
+          </a>
+          <a class="f-lang" data-l="hi" href="library.html#/?lang=hi" data-lib="/?lang=hi" lang="hi">
+            <span class="glyph" aria-hidden="true">अ</span>
+            <h3>हिन्दी</h3>
+            <span class="count" data-lang-count="hi"></span>
+            <span class="authors">प्रेमचंद · जयशंकर प्रसाद · निराला · आचार्य चतुरसेन · भारतेन्दु</span>
+            <span class="btn">हिन्दी किताबें देखें</span>
+          </a>
+          <a class="f-lang" data-l="te" href="library.html#/?lang=te" data-lib="/?lang=te" lang="te">
+            <span class="glyph" aria-hidden="true">అ</span>
+            <h3>తెలుగు</h3>
+            <span class="count" data-lang-count="te"></span>
+            <span class="authors">గురజాడ · కందుకూరి · చిలకమర్తి · అడివి బాపిరాజు · శ్రీశ్రీ</span>
+            <span class="btn">తెలుగు పుస్తకాలు చూడండి</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="f-section" id="featured">
+      <div class="wrap">
+        <div class="f-head f-head-row">
+          <div>
+            <h2 data-t="featuredTitle">Start with a classic</h2>
+            <p data-t="featuredSub"></p>
+          </div>
+          <a href="library.html" data-lib="" data-t="seeAll">See the whole library →</a>
+        </div>
+        <div class="f-featured" data-featured></div>
+      </div>
+    </section>
+
+    <section class="f-section f-band" id="features">
+      <div class="wrap">
+        <div class="f-head"><h2 data-t="featuresTitle">Read, listen, or add your own</h2></div>
+        <div class="f-features">
+          <div class="f-feature">
+            <span class="f-ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span>
+            <h3 data-t="f1t">Read anywhere</h3><p data-t="f1d"></p>
+          </div>
+          <div class="f-feature">
+            <span class="f-ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></span>
+            <h3 data-t="f2t">Narrated audiobooks</h3><p data-t="f2d"></p>
+          </div>
+          <div class="f-feature">
+            <span class="f-ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg></span>
+            <h3 data-t="f3t">Read aloud in any language</h3><p data-t="f3d"></p>
+          </div>
+          <div class="f-feature">
+            <span class="f-ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M20 16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"/></svg></span>
+            <h3 data-t="f4t">Add your own books</h3><p data-t="f4d"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="f-section" id="genres">
+      <div class="wrap">
+        <div class="f-head"><h2 data-t="genresTitle">Browse by genre</h2></div>
+        <div class="f-genres" data-genres></div>
+      </div>
+    </section>
+
+    <section class="f-section f-band" id="sources">
+      <div class="wrap">
+        <div class="f-head"><h2 data-t="sourcesTitle">Where the books come from</h2></div>
+        <div class="f-sources">
+          <a class="f-source" href="https://www.gutenberg.org/" target="_blank" rel="noopener"><b>Project Gutenberg</b><span data-t="srcGutenberg"></span></a>
+          <a class="f-source" href="https://wikisource.org/" target="_blank" rel="noopener"><b data-t="srcWikisourceName">Wikisource</b><span data-t="srcWikisource"></span></a>
+          <a class="f-source" href="https://librivox.org/" target="_blank" rel="noopener"><b>LibriVox</b><span data-t="srcLibrivox"></span></a>
+          <div class="f-source"><b data-t="srcVoicesName">Your browser</b><span data-t="srcVoices"></span></div>
+        </div>
+        <p class="f-note" data-t="copyrightNote"></p>
+      </div>
+    </section>
+
+    <section class="f-section">
+      <div class="wrap">
+        <div class="f-cta">
+          <div>
+            <h2 data-t="ctaTitle">Your library is open</h2>
+            <p data-t="ctaSub">Pick a book, or bring your own.</p>
+          </div>
+          <div class="f-ctas">
+            <a class="btn btn-lg f-cta-btn" href="library.html" data-lib=""><span data-t="openLibrary">Open the library</span></a>
+            <a class="btn btn-lg f-cta-ghost" href="library.html#/add" data-lib="/add"><span data-t="addOwn">Add your own book</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p data-t="footerLine">Granthalaya: a personal library for English, हिन्दी and తెలుగు books.</p>
+  </footer>
+
+  <script src="js/front.js"></script>
+</body>
+</html>
