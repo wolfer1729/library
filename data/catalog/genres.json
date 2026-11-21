@@ -1,0 +1,19 @@
+[
+  { "id": "classics", "en": "Classics", "hi": "क्लासिक", "te": "క్లాసిక్స్" },
+  { "id": "social", "en": "Social & Realist", "hi": "सामाजिक उपन्यास", "te": "సాంఘిక నవలలు" },
+  { "id": "romance", "en": "Romance", "hi": "प्रेम कथाएँ", "te": "ప్రేమ కథలు" },
+  { "id": "mystery", "en": "Mystery & Detective", "hi": "रहस्य और जासूसी", "te": "మిస్టరీ & డిటెక్టివ్" },
+  { "id": "adventure", "en": "Adventure", "hi": "साहसिक", "te": "సాహస కథలు" },
+  { "id": "historical", "en": "Historical", "hi": "ऐतिहासिक", "te": "చారిత్రక నవలలు" },
+  { "id": "short-stories", "en": "Short Stories", "hi": "कहानियाँ", "te": "కథానికలు" },
+  { "id": "children", "en": "Children's", "hi": "बाल साहित्य", "te": "పిల్లల కథలు" },
+  { "id": "folk", "en": "Folk Tales & Fables", "hi": "लोककथाएँ और नीतिकथाएँ", "te": "జానపద & నీతి కథలు" },
+  { "id": "fantasy", "en": "Fantasy", "hi": "फंतासी और तिलिस्म", "te": "ఫాంటసీ & అద్భుత కథలు" },
+  { "id": "scifi", "en": "Science Fiction", "hi": "विज्ञान कथा", "te": "సైన్స్ ఫిక్షన్" },
+  { "id": "horror", "en": "Horror & Gothic", "hi": "डरावनी कहानियाँ", "te": "భయానక కథలు" },
+  { "id": "humor", "en": "Humour & Satire", "hi": "हास्य-व्यंग्य", "te": "హాస్యం & వ్యంగ్యం" },
+  { "id": "drama", "en": "Plays & Drama", "hi": "नाटक", "te": "నాటకాలు" },
+  { "id": "poetry", "en": "Poetry", "hi": "कविता", "te": "కవిత్వం" },
+  { "id": "epics", "en": "Epics & Mythology", "hi": "महाकाव्य और पुराण", "te": "ఇతిహాసాలు & పురాణాలు" },
+  { "id": "philosophy", "en": "Spiritual & Philosophical", "hi": "आध्यात्मिक और दार्शनिक", "te": "ఆధ్యాత్మికం & తాత్వికం" }
+]

@@ -1,0 +1,272 @@
+{
+  "lang": "en",
+  "books": [
+    {
+      "id": "story-thirsty-crow-en", "group": "thirsty-crow", "lang": "en", "title": "The Thirsty Crow", "author": "Aesop's fable, retold", "genres": ["children", "folk"],
+      "desc": "On the hottest day of summer, a clever crow finds a pitcher with only a little water at the bottom.",
+      "text": [
+        "It was the hottest summer anyone could remember. The ponds had dried into cracked mud, and the streams had shrunk to nothing. High above the fields, a crow flew from tree to tree, searching for a single drop of water. His throat burned and his wings felt heavy.",
+        "At last, near a farmer's hut, he saw a clay pitcher standing in the shade. His heart leapt. He landed on its rim and peered inside. There was water, but only a little, far down at the bottom. He pushed his beak in as far as it would go, yet he could not reach it.",
+        "The crow tried to tip the pitcher over, but it was too heavy. He hopped around it, cawing in frustration. For a moment he thought of flying away. Then he noticed the small pebbles scattered on the ground nearby.",
+        "An idea sparkled in his mind. He picked up a pebble in his beak and dropped it into the pitcher. Plop! Then another. Plop! And another. With each pebble, the water rose a little higher. The crow worked patiently, pebble after pebble, though the sun beat down on his back.",
+        "Slowly the water climbed up, up, up, until at last it shimmered just below the rim. The crow dipped his beak and drank deeply, and the cool water soothed his dry throat. Refreshed, he spread his wings and flew back into the bright sky.",
+        "Moral: Where there is a will, there is a way. Patience and clear thinking can solve problems that strength alone cannot."
+      ]
+    },
+    {
+      "id": "story-thirsty-crow-hi", "group": "thirsty-crow", "lang": "hi", "title": "प्यासा कौआ", "alt": "The Thirsty Crow", "author": "ईसप की कथा, पुनर्कथन", "genres": ["children", "folk"],
+      "desc": "भीषण गर्मी में एक चतुर कौए को ऐसा घड़ा मिलता है जिसके तले में बस थोड़ा-सा पानी है।",
+      "text": [
+        "गर्मियों के दिन थे। ऐसी भीषण गर्मी किसी ने पहले कभी नहीं देखी थी। तालाब सूखकर दरारों वाली मिट्टी बन गए थे और नदी-नाले लगभग सूख चुके थे। खेतों के ऊपर एक कौआ पानी की एक बूँद की तलाश में एक पेड़ से दूसरे पेड़ तक उड़ रहा था। उसका गला सूख रहा था और पंख भारी लगने लगे थे।",
+        "आख़िरकार एक किसान की झोपड़ी के पास उसे छाँव में रखा एक मिट्टी का घड़ा दिखाई दिया। उसका दिल ख़ुशी से उछल पड़ा। वह घड़े के किनारे पर बैठा और भीतर झाँका। पानी था, लेकिन बहुत थोड़ा, बिलकुल तले में। उसने अपनी चोंच जितनी हो सकी अंदर डाली, फिर भी पानी तक नहीं पहुँच सका।",
+        "कौए ने घड़े को गिराने की कोशिश की, पर घड़ा बहुत भारी था। वह झुँझलाकर काँव-काँव करता हुआ घड़े के चारों ओर फुदकने लगा। एक पल को उसने सोचा कि यहाँ से उड़ जाए। तभी उसकी नज़र पास में बिखरे छोटे-छोटे कंकड़ों पर पड़ी।",
+        "उसे एक उपाय सूझा। उसने चोंच में एक कंकड़ उठाया और घड़े में डाल दिया। टप! फिर दूसरा। टप! फिर तीसरा। हर कंकड़ के साथ पानी थोड़ा-थोड़ा ऊपर आने लगा। तेज़ धूप के बावजूद कौआ धैर्य से एक-एक कंकड़ डालता रहा।",
+        "धीरे-धीरे पानी ऊपर, और ऊपर चढ़ता गया, यहाँ तक कि वह घड़े के मुँह के पास चमकने लगा। कौए ने चोंच डुबोई और जी भरकर ठंडा पानी पिया। उसकी प्यास बुझ गई। फिर वह पंख फैलाकर खुले आसमान में उड़ गया।",
+        "सीख: जहाँ चाह, वहाँ राह। धैर्य और सूझ-बूझ से वे मुश्किलें भी हल हो जाती हैं जो केवल ताक़त से हल नहीं होतीं।"
+      ]
+    },
+    {
+      "id": "story-thirsty-crow-te", "group": "thirsty-crow", "lang": "te", "title": "దాహం వేసిన కాకి", "alt": "The Thirsty Crow", "author": "ఈసప్ కథ, పునఃకథనం", "genres": ["children", "folk"],
+      "desc": "మండే ఎండల్లో తెలివైన కాకికి అడుగున కొంచెం నీళ్ళు మాత్రమే ఉన్న కుండ దొరుకుతుంది.",
+      "text": [
+        "అది ఎండాకాలం. అంతటి ఎండలు ఎవరూ ఎప్పుడూ చూడలేదు. చెరువులు ఎండిపోయి నేల బీటలు వారింది. వాగులు, వంకలు దాదాపు ఎండిపోయాయి. పొలాల మీదుగా ఒక కాకి ఒక్క నీటి చుక్క కోసం చెట్టు నుంచి చెట్టుకు ఎగురుతూ వెతుకుతోంది. దాని గొంతు ఎండిపోయింది, రెక్కలు బరువెక్కాయి.",
+        "చివరకు ఒక రైతు గుడిసె దగ్గర, నీడలో ఉంచిన ఒక మట్టి కుండ దానికి కనిపించింది. కాకి మనసు ఆనందంతో ఎగిరి గంతేసింది. అది కుండ అంచు మీద వాలి లోపలికి తొంగి చూసింది. నీళ్ళు ఉన్నాయి, కానీ చాలా కొంచెమే, అడుగున ఉన్నాయి. తన ముక్కును ఎంత లోపలికి పెట్టినా నీళ్ళు అందలేదు.",
+        "కాకి కుండను పడగొట్టడానికి ప్రయత్నించింది, కానీ కుండ చాలా బరువుగా ఉంది. విసుగుతో కావ్ కావ్ మంటూ కుండ చుట్టూ గెంతింది. ఒక క్షణం అక్కడి నుంచి ఎగిరిపోదామనుకుంది. అప్పుడే దగ్గర్లో చెల్లాచెదురుగా పడి ఉన్న చిన్న చిన్న గులకరాళ్ళు దాని కంట పడ్డాయి.",
+        "దానికి ఒక ఉపాయం తట్టింది. ముక్కుతో ఒక గులకరాయిని ఎత్తి కుండలో వేసింది. టప్! తర్వాత ఇంకొకటి. టప్! మళ్ళీ ఇంకొకటి. ఒక్కో రాయి పడుతున్న కొద్దీ నీళ్ళు కొంచెం కొంచెం పైకి వచ్చాయి. ఎండ మండిపోతున్నా కాకి ఓపికగా ఒక్కొక్క రాయి వేస్తూనే ఉంది.",
+        "మెల్లమెల్లగా నీళ్ళు పైకి, ఇంకా పైకి వచ్చి కుండ అంచు దగ్గర మెరవసాగాయి. కాకి ముక్కు ముంచి తనివితీరా చల్లని నీళ్ళు తాగింది. దాని దాహం తీరింది. తర్వాత అది రెక్కలు విప్పి నీలాకాశంలోకి ఎగిరిపోయింది.",
+        "నీతి: సంకల్పం ఉంటే మార్గం దొరుకుతుంది. బలంతో సాధించలేని పనులను ఓపిక, తెలివితో సాధించవచ్చు."
+      ]
+    },
+    {
+      "id": "story-monkey-crocodile-en", "group": "monkey-crocodile", "lang": "en", "title": "The Monkey and the Crocodile", "author": "Panchatantra, retold", "genres": ["children", "folk"],
+      "desc": "A monkey's friendship with a crocodile is put to the test in the middle of a deep river.",
+      "text": [
+        "On the bank of a wide river stood a tall jamun tree, heavy with sweet purple fruit. In it lived a cheerful monkey named Raktamukha. One day a tired crocodile climbed onto the bank to rest beneath the tree. The kind monkey tossed him a handful of jamuns. “Eat, friend,” he said. “They are the sweetest on this river.”",
+        "The crocodile, Karalamukha, loved the fruit. He came back the next day, and the day after that. Soon the two became the best of friends. They talked for hours, and every evening the crocodile carried jamuns home to his wife.",
+        "But the crocodile's wife was greedy. “If the fruit is this sweet,” she said, “imagine how sweet the heart of the monkey who eats it every day must be! Bring me his heart, or I will never speak to you again.”",
+        "The crocodile was troubled, but he could not refuse her. The next day he said to the monkey, “My wife wants to thank you. Come home with me for dinner. Sit on my back, and I will carry you across the river.”",
+        "The monkey happily jumped onto his back. But in the middle of the deep river, the crocodile began to sink. “Forgive me,” he said. “My wife wants to eat your heart.”",
+        "The monkey's heart pounded, but he kept calm. “Oh, my dear friend!” he laughed. “Why didn't you tell me before? We monkeys keep our hearts safe in the trees. Mine is hanging on the jamun tree. Take me back, and I will fetch it for your wife.”",
+        "The foolish crocodile turned around and swam back to the bank. The moment they reached the shore, the monkey leapt up to the highest branch. “You foolish creature!” he called down. “Can anyone keep his heart outside his body? You betrayed a true friend. Our friendship ends today.”",
+        "Ashamed, the crocodile slid away into the water.",
+        "Moral: Keep a calm mind in danger. Quick thinking can save you when strength cannot."
+      ]
+    },
+    {
+      "id": "story-monkey-crocodile-hi", "group": "monkey-crocodile", "lang": "hi", "title": "बंदर और मगरमच्छ", "alt": "The Monkey and the Crocodile", "author": "पंचतंत्र, पुनर्कथन", "genres": ["children", "folk"],
+      "desc": "गहरी नदी के बीच बंदर और मगरमच्छ की दोस्ती की परीक्षा होती है।",
+      "text": [
+        "एक चौड़ी नदी के किनारे जामुन का एक ऊँचा पेड़ था, जो मीठे-मीठे जामुनों से लदा रहता था। उस पेड़ पर रक्तमुख नाम का एक हँसमुख बंदर रहता था। एक दिन एक थका-हारा मगरमच्छ आराम करने के लिए किनारे पर आकर पेड़ के नीचे बैठ गया। दयालु बंदर ने उसकी ओर मुट्ठी भर जामुन फेंके और कहा, “खाओ मित्र, इस नदी के सबसे मीठे जामुन यही हैं।”",
+        "करालमुख नाम के उस मगरमच्छ को जामुन बहुत पसंद आए। वह अगले दिन फिर आया, और उसके अगले दिन भी। जल्दी ही दोनों पक्के दोस्त बन गए। वे घंटों बातें करते और हर शाम मगरमच्छ अपनी पत्नी के लिए जामुन ले जाता।",
+        "लेकिन मगरमच्छ की पत्नी लालची थी। उसने कहा, “जब ये जामुन इतने मीठे हैं, तो रोज़ इन्हें खाने वाले बंदर का कलेजा कितना मीठा होगा! मुझे उसका कलेजा लाकर दो, नहीं तो मैं तुमसे कभी बात नहीं करूँगी।”",
+        "मगरमच्छ दुविधा में पड़ गया, पर पत्नी की बात टाल न सका। अगले दिन उसने बंदर से कहा, “मेरी पत्नी तुम्हें धन्यवाद देना चाहती है। आज रात खाने पर मेरे घर चलो। मेरी पीठ पर बैठ जाओ, मैं तुम्हें नदी पार ले चलूँगा।”",
+        "बंदर ख़ुशी-ख़ुशी उसकी पीठ पर कूद गया। लेकिन गहरी नदी के बीच पहुँचकर मगरमच्छ डुबकी लगाने लगा। उसने कहा, “मुझे माफ़ करना मित्र, मेरी पत्नी तुम्हारा कलेजा खाना चाहती है।”",
+        "बंदर का दिल ज़ोर से धड़कने लगा, पर उसने धीरज नहीं खोया। वह हँसकर बोला, “अरे मेरे प्यारे दोस्त! यह बात तुमने पहले क्यों नहीं बताई? हम बंदर तो अपना कलेजा पेड़ पर सँभालकर रखते हैं। मेरा कलेजा जामुन के पेड़ पर टँगा है। मुझे वापस ले चलो, मैं भाभी के लिए ले आता हूँ।”",
+        "मूर्ख मगरमच्छ मुड़ा और किनारे की ओर तैर चला। किनारे पहुँचते ही बंदर उछलकर पेड़ की सबसे ऊँची डाल पर जा बैठा और बोला, “अरे मूर्ख! क्या कोई अपना कलेजा शरीर से बाहर रखता है? तुमने एक सच्चे मित्र को धोखा दिया है। आज से हमारी दोस्ती ख़त्म।”",
+        "मगरमच्छ शर्मिंदा होकर चुपचाप पानी में लौट गया।",
+        "सीख: संकट के समय धैर्य रखो। सूझ-बूझ वहाँ बचा लेती है जहाँ ताक़त काम नहीं आती।"
+      ]
+    },
+    {
+      "id": "story-monkey-crocodile-te", "group": "monkey-crocodile", "lang": "te", "title": "కోతి - మొసలి", "alt": "The Monkey and the Crocodile", "author": "పంచతంత్రం, పునఃకథనం", "genres": ["children", "folk"],
+      "desc": "లోతైన నది మధ్యలో కోతి, మొసలి స్నేహానికి పరీక్ష ఎదురవుతుంది.",
+      "text": [
+        "ఒక విశాలమైన నది ఒడ్డున ఒక పెద్ద నేరేడు చెట్టు ఉండేది. దాని నిండా తియ్యని నేరేడు పండ్లు ఉండేవి. ఆ చెట్టు మీద రక్తముఖుడు అనే ఒక ఉల్లాసమైన కోతి నివసించేది. ఒక రోజు అలసిపోయిన ఒక మొసలి విశ్రాంతి కోసం ఒడ్డుకు వచ్చి ఆ చెట్టు కింద కూర్చుంది. దయగల కోతి దాని వైపు గుప్పెడు నేరేడు పండ్లు విసిరి, “తిను మిత్రమా, ఈ నదీ తీరంలో ఇంతకంటే తియ్యని పండ్లు దొరకవు” అంది.",
+        "కరాళముఖుడు అనే ఆ మొసలికి పండ్లు ఎంతో నచ్చాయి. అది మరుసటి రోజు మళ్ళీ వచ్చింది, ఆ తర్వాతి రోజు కూడా వచ్చింది. త్వరలోనే రెండూ ప్రాణ స్నేహితులయ్యాయి. గంటల తరబడి కబుర్లు చెప్పుకునేవి. ప్రతి సాయంత్రం మొసలి తన భార్య కోసం నేరేడు పండ్లు తీసుకువెళ్ళేది.",
+        "కానీ మొసలి భార్య అత్యాశపరురాలు. “ఈ పండ్లే ఇంత తియ్యగా ఉంటే, రోజూ వీటిని తినే ఆ కోతి గుండె ఇంకెంత తియ్యగా ఉంటుందో! నాకు దాని గుండె తెచ్చివ్వు, లేకపోతే నీతో ఇక మాట్లాడను” అంది.",
+        "మొసలి సందిగ్ధంలో పడింది, కానీ భార్య మాట కాదనలేకపోయింది. మరుసటి రోజు అది కోతితో, “నా భార్య నీకు కృతజ్ఞతలు చెప్పాలనుకుంటోంది. ఈ రాత్రి భోజనానికి మా ఇంటికి రా. నా వీపు మీద కూర్చో, నిన్ను నది దాటిస్తాను” అంది.",
+        "కోతి సంతోషంగా దాని వీపు మీదకు దూకింది. కానీ లోతైన నది మధ్యకు చేరగానే మొసలి నీటిలో మునగడం మొదలుపెట్టింది. “నన్ను క్షమించు మిత్రమా, నా భార్య నీ గుండెను తినాలనుకుంటోంది” అంది.",
+        "కోతి గుండె దడదడలాడింది, కానీ అది ధైర్యం కోల్పోలేదు. నవ్వుతూ, “అయ్యో నా ప్రియ మిత్రమా! ఈ మాట ముందే ఎందుకు చెప్పలేదు? మేము కోతులం మా గుండెలను చెట్ల మీద భద్రంగా దాచుకుంటాం. నా గుండె నేరేడు చెట్టుకు వేలాడుతోంది. నన్ను వెనక్కి తీసుకువెళ్ళు, మీ ఆవిడ కోసం తెచ్చిస్తాను” అంది.",
+        "తెలివితక్కువ మొసలి వెనక్కి తిరిగి ఒడ్డు వైపు ఈదింది. ఒడ్డుకు చేరిన వెంటనే కోతి ఎగిరి చెట్టు పైకొమ్మ మీదకు చేరి, “ఓరి మూర్ఖుడా! ఎవరైనా తమ గుండెను శరీరం బయట ఉంచుకుంటారా? నిజమైన స్నేహితుడిని మోసం చేశావు. ఈ రోజుతో మన స్నేహం ముగిసింది” అంది.",
+        "మొసలి సిగ్గుతో తల దించుకుని నీటిలోకి జారుకుంది.",
+        "నీతి: ఆపదలో ఆందోళన పడకుండా ఆలోచించాలి. బలం పనికిరాని చోట సమయస్ఫూర్తి కాపాడుతుంది."
+      ]
+    },
+    {
+      "id": "story-lion-rabbit-en", "group": "lion-rabbit", "lang": "en", "title": "The Lion and the Clever Rabbit", "author": "Panchatantra, retold", "genres": ["children", "folk"],
+      "desc": "A tiny rabbit outwits the cruel king of the forest with nothing but a well and a clever story.",
+      "text": [
+        "Deep in a forest lived a lion named Bhasuraka, so proud and cruel that he killed animals not only for food but for fun. The frightened animals held a meeting and went to him together. “Your Majesty,” they said, “if you keep hunting like this, the forest will soon be empty. Stay in your den instead, and every day one of us will come to you as your meal.” The lion agreed, but warned that if a single day was missed, he would kill them all.",
+        "Day after day, an animal went to the lion. Then came the turn of a small rabbit. The rabbit was afraid, but he was also clever. On the way he walked slowly, stopping to think, and by the time he reached the den the sun was high and the lion was roaring with hunger.",
+        "“Why are you so late?” thundered the lion. “And you are so small! You would not fill even one of my teeth!”",
+        "The rabbit bowed low. “Your Majesty, it is not my fault. Five rabbits were sent to you today. But on the way, another lion stopped us. He said that he is the true king of this forest, and he ate the other four. I alone escaped to bring you the news.”",
+        "The lion's eyes blazed. “Another king in my forest? Show me this thief at once!”",
+        "The rabbit led him to an old, deep well. “He lives down there, Your Majesty, inside his fortress.”",
+        "The lion peered into the well and saw a fierce lion glaring up at him from the water. It was his own reflection. He roared, and the well roared back even louder. Mad with fury, the lion leapt into the well to fight his rival, and was never seen again.",
+        "The rabbit ran back to the other animals with the news, and the whole forest rejoiced.",
+        "Moral: Intelligence is greater than strength."
+      ]
+    },
+    {
+      "id": "story-lion-rabbit-hi", "group": "lion-rabbit", "lang": "hi", "title": "शेर और चतुर खरगोश", "alt": "The Lion and the Clever Rabbit", "author": "पंचतंत्र, पुनर्कथन", "genres": ["children", "folk"],
+      "desc": "एक नन्हा खरगोश अपनी बुद्धि से जंगल के क्रूर राजा को मात देता है।",
+      "text": [
+        "एक घने जंगल में भासुरक नाम का एक शेर रहता था। वह इतना घमंडी और क्रूर था कि सिर्फ़ भूख मिटाने के लिए नहीं, बल्कि मज़े के लिए भी जानवरों को मार डालता था। डरे हुए जानवरों ने एक सभा की और मिलकर उसके पास गए। उन्होंने कहा, “महाराज, अगर आप इसी तरह शिकार करते रहे तो जल्दी ही जंगल ख़ाली हो जाएगा। आप अपनी गुफ़ा में आराम कीजिए, हम रोज़ आपके भोजन के लिए एक जानवर भेज दिया करेंगे।” शेर मान गया, पर उसने चेतावनी दी कि अगर एक भी दिन चूक हुई तो वह सबको मार डालेगा।",
+        "रोज़ एक जानवर शेर के पास जाने लगा। फिर एक दिन एक छोटे-से खरगोश की बारी आई। खरगोश डरा हुआ था, पर साथ ही बहुत चतुर भी था। रास्ते में वह धीरे-धीरे चलता रहा और सोचता रहा। जब तक वह गुफ़ा तक पहुँचा, सूरज सिर पर आ गया था और शेर भूख से दहाड़ रहा था।",
+        "शेर गरजा, “इतनी देर क्यों लगाई? और तू इतना छोटा है कि मेरे एक दाँत के लिए भी काफ़ी नहीं!”",
+        "खरगोश ने झुककर प्रणाम किया, “महाराज, इसमें मेरा कोई दोष नहीं। आज आपके लिए पाँच खरगोश भेजे गए थे। पर रास्ते में एक दूसरे शेर ने हमें रोक लिया। उसने कहा कि इस जंगल का असली राजा वही है, और बाक़ी चारों को खा गया। मैं किसी तरह बचकर आपको ख़बर देने आया हूँ।”",
+        "शेर की आँखें गुस्से से लाल हो गईं। “मेरे जंगल में दूसरा राजा? मुझे उस चोर के पास अभी ले चल!”",
+        "खरगोश उसे एक पुराने, गहरे कुएँ के पास ले गया। “महाराज, वह इसी के भीतर अपने क़िले में रहता है।”",
+        "शेर ने कुएँ में झाँका तो पानी में एक ख़ूँख़ार शेर उसे घूरता दिखाई दिया। वह उसकी अपनी परछाईं थी। शेर दहाड़ा, तो कुएँ से और भी ज़ोर की दहाड़ गूँजी। गुस्से में पागल होकर शेर अपने दुश्मन से लड़ने के लिए कुएँ में कूद पड़ा, और फिर कभी बाहर नहीं निकला।",
+        "खरगोश दौड़कर बाक़ी जानवरों के पास यह ख़बर लेकर पहुँचा, और पूरा जंगल ख़ुशी से झूम उठा।",
+        "सीख: बुद्धि बल से बड़ी होती है।"
+      ]
+    },
+    {
+      "id": "story-lion-rabbit-te", "group": "lion-rabbit", "lang": "te", "title": "సింహం - తెలివైన కుందేలు", "alt": "The Lion and the Clever Rabbit", "author": "పంచతంత్రం, పునఃకథనం", "genres": ["children", "folk"],
+      "desc": "ఒక చిన్న కుందేలు తన తెలివితో అడవికి రాజైన క్రూర సింహాన్ని ఓడిస్తుంది.",
+      "text": [
+        "ఒక దట్టమైన అడవిలో భాసురకం అనే సింహం ఉండేది. అది ఎంత గర్వంతో, క్రూరంగా ఉండేదంటే, ఆకలి కోసమే కాదు, సరదా కోసం కూడా జంతువులను చంపేది. భయపడిన జంతువులన్నీ ఒక సభ పెట్టుకుని, కలిసి దాని దగ్గరకు వెళ్ళాయి. “మహారాజా, మీరు ఇలాగే వేటాడుతూ ఉంటే త్వరలోనే అడవి ఖాళీ అయిపోతుంది. మీరు మీ గుహలోనే విశ్రాంతి తీసుకోండి. రోజుకు ఒక జంతువును మీ ఆహారంగా మేమే పంపుతాం” అని వేడుకున్నాయి. సింహం ఒప్పుకుంది, కానీ ఒక్క రోజు తప్పినా అందరినీ చంపేస్తానని హెచ్చరించింది.",
+        "రోజుకొక జంతువు సింహం దగ్గరకు వెళ్ళసాగింది. ఒక రోజు ఒక చిన్న కుందేలు వంతు వచ్చింది. కుందేలుకు భయంగా ఉన్నా, అది చాలా తెలివైనది. దారిలో అది నెమ్మదిగా నడుస్తూ ఆలోచిస్తూ వెళ్ళింది. అది గుహ చేరేసరికి సూర్యుడు నడినెత్తికి వచ్చాడు. సింహం ఆకలితో గర్జిస్తోంది.",
+        "“ఇంత ఆలస్యం ఎందుకు? పైగా నువ్వు ఇంత చిన్నగా ఉన్నావు, నా ఒక్క పంటికి కూడా సరిపోవు!” అని సింహం గర్జించింది.",
+        "కుందేలు వినయంగా తల వంచి, “మహారాజా, ఇందులో నా తప్పేమీ లేదు. ఈ రోజు మీ కోసం ఐదు కుందేళ్ళను పంపారు. కానీ దారిలో మరో సింహం మమ్మల్ని అడ్డగించింది. ఈ అడవికి అసలైన రాజును నేనే అని చెప్పి, మిగతా నాలుగింటినీ తినేసింది. నేను ఎలాగో తప్పించుకుని ఈ సంగతి మీకు చెప్పడానికి వచ్చాను” అంది.",
+        "సింహం కళ్ళు కోపంతో ఎర్రబడ్డాయి. “నా అడవిలో మరో రాజా? ఆ దొంగ దగ్గరకు నన్ను ఇప్పుడే తీసుకువెళ్ళు!”",
+        "కుందేలు దాన్ని ఒక పాత, లోతైన బావి దగ్గరకు తీసుకువెళ్ళింది. “మహారాజా, అతను ఈ బావి లోపల తన కోటలో ఉంటాడు.”",
+        "సింహం బావిలోకి తొంగి చూసింది. నీటిలో ఒక భయంకరమైన సింహం తన వైపు కోపంగా చూస్తూ కనిపించింది. అది తన సొంత ప్రతిబింబమే. సింహం గర్జించగానే బావిలో నుంచి ఇంకా గట్టిగా ప్రతిధ్వని వినిపించింది. కోపంతో ఊగిపోయిన సింహం తన శత్రువుతో పోరాడటానికి బావిలోకి దూకింది, మళ్ళీ ఎప్పటికీ బయటకు రాలేదు.",
+        "కుందేలు పరుగుపరుగున వెళ్ళి మిగతా జంతువులకు ఈ వార్త చెప్పింది. అడవి అంతా ఆనందంతో పండుగ చేసుకుంది.",
+        "నీతి: బలం కంటే బుద్ధి గొప్పది."
+      ]
+    },
+    {
+      "id": "story-talkative-tortoise-en", "group": "talkative-tortoise", "lang": "en", "title": "The Talkative Tortoise", "author": "Panchatantra, retold", "genres": ["children", "folk"],
+      "desc": "Two swans carry their tortoise friend through the sky. He only has to keep his mouth shut.",
+      "text": [
+        "In a lake lived a tortoise named Kambugriva. His two dearest friends were a pair of swans, Sankata and Vikata. Every evening the swans sat on the shore and listened to the tortoise, who loved to talk more than anything in the world.",
+        "One year the rains failed. Day by day the lake shrank, until only a muddy puddle remained. “We must fly to a great lake far away,” said the swans sadly. “But how will you come with us, dear friend? You cannot fly.”",
+        "The tortoise thought hard. “Bring a strong stick,” he said. “I will hold the middle tightly in my mouth. You two hold the ends in your beaks and carry me through the sky.”",
+        "“It is a clever plan,” said the swans, “but remember: you must not open your mouth, not even once, until we land. If you speak, you will fall.”",
+        "“I promise,” said the tortoise. “I will not say a single word.”",
+        "So the swans rose into the air with the stick, and the tortoise swung between them, high above fields and villages. Down below, the people of a town looked up in amazement. “Look! Look!” they shouted. “Two birds are carrying a tortoise on a stick!” Children ran through the streets, laughing and pointing.",
+        "The tortoise grew annoyed. “Why are these people making such a fuss?” he thought. “I must tell them to mind their own business!” He forgot his promise and opened his mouth: “What are you all staring at—”",
+        "Before he could finish, he lost his grip on the stick and tumbled down, down, down to the ground.",
+        "Moral: Know when to keep silent. Those who cannot hold their tongue often bring trouble on themselves."
+      ]
+    },
+    {
+      "id": "story-talkative-tortoise-hi", "group": "talkative-tortoise", "lang": "hi", "title": "बातूनी कछुआ", "alt": "The Talkative Tortoise", "author": "पंचतंत्र, पुनर्कथन", "genres": ["children", "folk"],
+      "desc": "दो हंस अपने कछुए मित्र को आसमान में उड़ा ले चलते हैं। शर्त बस इतनी है कि कछुआ मुँह न खोले।",
+      "text": [
+        "एक तालाब में कंबुग्रीव नाम का एक कछुआ रहता था। संकट और विकट नाम के दो हंस उसके सबसे प्यारे मित्र थे। हर शाम दोनों हंस किनारे पर बैठकर कछुए की बातें सुनते, क्योंकि कछुए को दुनिया में सबसे ज़्यादा बातें करना ही पसंद था।",
+        "एक साल बारिश नहीं हुई। दिन-ब-दिन तालाब सूखता गया, और अंत में सिर्फ़ थोड़ा-सा कीचड़ भरा पानी बचा। हंसों ने उदास होकर कहा, “हमें दूर किसी बड़ी झील पर उड़कर जाना होगा। लेकिन प्यारे मित्र, तुम हमारे साथ कैसे चलोगे? तुम तो उड़ नहीं सकते।”",
+        "कछुए ने ख़ूब सोचा और बोला, “एक मज़बूत लकड़ी ले आओ। मैं उसे बीच से अपने मुँह में कसकर पकड़ लूँगा। तुम दोनों उसके सिरे अपनी चोंच में पकड़कर मुझे आसमान में उड़ा ले चलना।”",
+        "हंसों ने कहा, “उपाय तो बढ़िया है, पर याद रखना: जब तक हम ज़मीन पर न उतरें, तुम एक बार भी मुँह मत खोलना। अगर बोले, तो नीचे गिर जाओगे।”",
+        "कछुए ने कहा, “मैं वादा करता हूँ। मैं एक शब्द भी नहीं बोलूँगा।”",
+        "हंस लकड़ी लेकर आसमान में उड़ चले और कछुआ उनके बीच झूलता हुआ खेतों और गाँवों के ऊपर से गुज़रने लगा। नीचे एक नगर के लोग हैरानी से ऊपर देखने लगे। वे चिल्लाए, “देखो! देखो! दो पक्षी एक कछुए को लकड़ी पर लटकाकर ले जा रहे हैं!” बच्चे हँसते और उँगली दिखाते हुए गलियों में दौड़ने लगे।",
+        "कछुए को गुस्सा आ गया। उसने सोचा, “ये लोग इतना शोर क्यों मचा रहे हैं? मुझे इन्हें बताना चाहिए कि अपने काम से काम रखें!” वह अपना वादा भूल गया और मुँह खोलकर बोला, “तुम सब क्या घूर रहे—”",
+        "वह अपनी बात पूरी भी न कर पाया था कि लकड़ी उसके मुँह से छूट गई, और वह नीचे, और नीचे, ज़मीन पर आ गिरा।",
+        "सीख: कब चुप रहना है, यह जानना ज़रूरी है। जो अपनी ज़बान पर क़ाबू नहीं रखते, वे अक्सर ख़ुद मुसीबत मोल ले लेते हैं।"
+      ]
+    },
+    {
+      "id": "story-talkative-tortoise-te", "group": "talkative-tortoise", "lang": "te", "title": "వాగుడుకాయ తాబేలు", "alt": "The Talkative Tortoise", "author": "పంచతంత్రం, పునఃకథనం", "genres": ["children", "folk"],
+      "desc": "రెండు హంసలు తమ తాబేలు స్నేహితుడిని ఆకాశంలో మోసుకువెళ్తాయి. షరతు ఒక్కటే: తాబేలు నోరు తెరవకూడదు.",
+      "text": [
+        "ఒక చెరువులో కంబుగ్రీవుడు అనే తాబేలు ఉండేది. సంకటుడు, వికటుడు అనే రెండు హంసలు దానికి ప్రాణ స్నేహితులు. ప్రతి సాయంత్రం హంసలు ఒడ్డున కూర్చుని తాబేలు కబుర్లు వినేవి. ఎందుకంటే ఆ తాబేలుకు ఈ ప్రపంచంలో అన్నిటికంటే మాట్లాడటమే ఇష్టం.",
+        "ఒక ఏడాది వానలు పడలేదు. రోజురోజుకూ చెరువు ఎండిపోతూ, చివరకు కొంచెం బురద నీరు మాత్రమే మిగిలింది. “మనం ఎక్కడో దూరంగా ఉన్న పెద్ద సరస్సుకు ఎగిరి వెళ్ళాలి. కానీ ప్రియ మిత్రమా, నువ్వు మాతో ఎలా వస్తావు? నీకు ఎగరడం రాదు కదా” అని హంసలు బాధగా అన్నాయి.",
+        "తాబేలు బాగా ఆలోచించి, “ఒక గట్టి కర్రను తీసుకురండి. దాని మధ్య భాగాన్ని నేను నోటితో గట్టిగా పట్టుకుంటాను. మీరిద్దరూ దాని చివర్లను మీ ముక్కులతో పట్టుకుని నన్ను ఆకాశంలో మోసుకువెళ్ళండి” అంది.",
+        "“ఉపాయం బాగుంది. కానీ గుర్తుంచుకో: మనం నేల మీద దిగే వరకు నువ్వు ఒక్కసారి కూడా నోరు తెరవకూడదు. మాట్లాడితే కింద పడిపోతావు” అని హంసలు హెచ్చరించాయి.",
+        "“మాట ఇస్తున్నాను. ఒక్క మాట కూడా మాట్లాడను” అంది తాబేలు.",
+        "హంసలు కర్రను పట్టుకుని ఆకాశంలోకి ఎగిరాయి. తాబేలు వాటి మధ్య వేలాడుతూ పొలాలు, ఊళ్ళ మీదుగా ప్రయాణించింది. కింద ఒక పట్టణంలోని జనం ఆశ్చర్యంగా పైకి చూశారు. “చూడండి! చూడండి! రెండు పక్షులు ఒక తాబేలును కర్రకు వేలాడదీసి తీసుకువెళ్తున్నాయి!” అని అరిచారు. పిల్లలు నవ్వుతూ, వేలు చూపిస్తూ వీధుల్లో పరుగులు తీశారు.",
+        "తాబేలుకు కోపం వచ్చింది. “ఈ జనం ఎందుకింత గోల చేస్తున్నారు? మీ పని మీరు చూసుకోండని వీళ్ళకు చెప్పాలి!” అనుకుంది. తను ఇచ్చిన మాట మరిచిపోయి నోరు తెరిచి, “మీరంతా ఏం చూస్తున్నారు—” అంది.",
+        "ఆ మాట పూర్తి కాకముందే కర్ర దాని నోటి నుంచి జారిపోయింది. తాబేలు కిందికి, ఇంకా కిందికి, నేల మీద పడిపోయింది.",
+        "నీతి: ఎప్పుడు మౌనంగా ఉండాలో తెలుసుకోవాలి. నోరు అదుపులో పెట్టుకోలేని వారు తరచూ తమకు తామే కష్టాలు తెచ్చుకుంటారు."
+      ]
+    },
+    {
+      "id": "story-tenali-thieves-en", "group": "tenali-thieves", "lang": "en", "title": "Tenali Rama and the Thieves", "author": "Indian folk tale, retold", "genres": ["children", "folk", "humor"],
+      "desc": "Thieves come to rob the witty poet Tenali Rama, and end up watering his whole garden.",
+      "text": [
+        "In the kingdom of Vijayanagara there was once a long, hard summer. The wells were low and the gardens were drying up. Tenali Ramakrishna, the witty poet of King Krishnadevaraya's court, looked at his own garden and sighed. “Watering all these plants will take days,” he said to his wife.",
+        "That night, as he sat outside his house, Tenali Rama noticed something moving behind the bushes. Thieves were hiding there, waiting for the family to fall asleep so that they could break in.",
+        "Tenali Rama smiled to himself. He went inside and spoke loudly to his wife, so that the thieves could hear: “Have you heard? There have been many robberies in the city lately. Let us put all our gold and jewels into this big trunk and drop it into the well. No thief will ever think of looking there!”",
+        "His wife understood at once. Together they filled a heavy trunk with stones, carried it outside with a great show of effort, and threw it into the well with a loud splash. Then they went to bed.",
+        "The thieves were delighted. As soon as the lamps went out, they crept to the well and began drawing up water, bucket after bucket, so that they could reach the trunk. They worked all night long. The water they poured onto the ground flowed along the channels into the garden, soaking every plant and every tree.",
+        "At dawn the exhausted thieves finally pulled up the trunk, only to find it full of stones! Just then Tenali Rama stepped out and called, “Thank you, my friends! My garden has never been watered so well. Do come again next summer!”",
+        "The embarrassed thieves ran for their lives. When the king heard the story, he laughed until tears came to his eyes.",
+        "Moral: A sharp mind can turn trouble into a blessing."
+      ]
+    },
+    {
+      "id": "story-tenali-thieves-hi", "group": "tenali-thieves", "lang": "hi", "title": "तेनालीराम और चोर", "alt": "Tenali Rama and the Thieves", "author": "लोककथा, पुनर्कथन", "genres": ["children", "folk", "humor"],
+      "desc": "चोर चतुर कवि तेनालीराम के घर चोरी करने आते हैं, और उनका पूरा बगीचा सींच जाते हैं।",
+      "text": [
+        "विजयनगर राज्य में एक बार बड़ी लंबी और कड़ी गर्मी पड़ी। कुओं में पानी नीचे चला गया और बगीचे सूखने लगे। राजा कृष्णदेवराय के दरबार के चतुर कवि तेनालीराम ने अपने बगीचे को देखकर लंबी साँस ली और पत्नी से कहा, “इन सब पौधों को सींचने में तो कई दिन लग जाएँगे।”",
+        "उसी रात जब तेनालीराम घर के बाहर बैठे थे, तो उन्हें झाड़ियों के पीछे कुछ हलचल दिखाई दी। कुछ चोर वहाँ छिपे बैठे थे और परिवार के सो जाने का इंतज़ार कर रहे थे, ताकि घर में सेंध लगा सकें।",
+        "तेनालीराम मन ही मन मुस्कराए। वे घर के अंदर गए और ऊँची आवाज़ में पत्नी से बोले, ताकि चोर सुन लें, “सुना है आजकल नगर में बहुत चोरियाँ हो रही हैं। चलो, अपना सारा सोना और गहने इस बड़े संदूक में भरकर कुएँ में डाल देते हैं। किसी चोर को वहाँ ढूँढ़ने की सूझेगी ही नहीं!”",
+        "पत्नी तुरंत समझ गईं। दोनों ने मिलकर एक भारी संदूक में पत्थर भरे, उसे बड़ी मेहनत का दिखावा करते हुए बाहर ले गए और ज़ोर की छपाक के साथ कुएँ में फेंक दिया। फिर वे सोने चले गए।",
+        "चोर बहुत ख़ुश हुए। बत्तियाँ बुझते ही वे चुपके से कुएँ के पास पहुँचे और संदूक तक पहुँचने के लिए बाल्टी पर बाल्टी पानी खींचने लगे। वे पूरी रात मेहनत करते रहे। जो पानी वे ज़मीन पर उँडेलते, वह नालियों से बहकर बगीचे में पहुँचता और हर पौधे, हर पेड़ को भिगो देता।",
+        "भोर होते-होते थके-हारे चोरों ने आख़िरकार संदूक बाहर निकाला, पर उसमें तो सिर्फ़ पत्थर भरे थे! तभी तेनालीराम बाहर आए और बोले, “धन्यवाद, मित्रो! मेरे बगीचे की ऐसी सिंचाई पहले कभी नहीं हुई। अगली गर्मियों में फिर आना!”",
+        "शर्मिंदा चोर सिर पर पैर रखकर भाग गए। जब राजा ने यह क़िस्सा सुना, तो वे इतना हँसे कि उनकी आँखों में आँसू आ गए।",
+        "सीख: तेज़ बुद्धि मुसीबत को भी वरदान में बदल सकती है।"
+      ]
+    },
+    {
+      "id": "story-tenali-thieves-te", "group": "tenali-thieves", "lang": "te", "title": "తెనాలి రామకృష్ణుడు - దొంగలు", "alt": "Tenali Rama and the Thieves", "author": "జానపద కథ, పునఃకథనం", "genres": ["children", "folk", "humor"],
+      "desc": "తెనాలి రామకృష్ణుడి ఇంట్లో దొంగతనానికి వచ్చిన దొంగలు చివరకు ఆయన తోటంతా నీళ్ళు పెట్టి వెళ్తారు.",
+      "text": [
+        "విజయనగర సామ్రాజ్యంలో ఒకసారి సుదీర్ఘమైన, తీవ్రమైన వేసవి వచ్చింది. బావుల్లో నీళ్ళు అడుగంటాయి, తోటలు ఎండిపోసాగాయి. శ్రీకృష్ణదేవరాయల ఆస్థానంలోని చమత్కార కవి తెనాలి రామకృష్ణుడు తన తోటను చూసి నిట్టూర్చాడు. “ఈ మొక్కలన్నిటికీ నీళ్ళు పెట్టాలంటే రోజులు పడుతుంది” అని భార్యతో అన్నాడు.",
+        "ఆ రాత్రి రామకృష్ణుడు ఇంటి బయట కూర్చుని ఉండగా, పొదల వెనుక ఏదో కదలిక కనిపించింది. కొందరు దొంగలు అక్కడ దాక్కుని, ఇంట్లోవాళ్ళు నిద్రపోగానే లోపలికి చొరబడాలని ఎదురుచూస్తున్నారు.",
+        "రామకృష్ణుడు లోలోపల నవ్వుకున్నాడు. ఇంట్లోకి వెళ్ళి, దొంగలకు వినబడేలా భార్యతో గట్టిగా ఇలా అన్నాడు: “విన్నావా? ఈ మధ్య ఊళ్ళో దొంగతనాలు ఎక్కువయ్యాయి. మన బంగారం, నగలన్నీ ఈ పెద్ద పెట్టెలో పెట్టి బావిలో పడేద్దాం. అక్కడ వెతకాలన్న ఆలోచన ఏ దొంగకూ రాదు!”",
+        "భార్య వెంటనే అర్థం చేసుకుంది. ఇద్దరూ కలిసి ఒక బరువైన పెట్టె నిండా రాళ్ళు నింపారు. ఎంతో కష్టపడుతున్నట్టు నటిస్తూ దాన్ని బయటకు మోసుకువచ్చి, పెద్ద చప్పుడుతో బావిలో పడేశారు. ఆ తర్వాత నిద్రపోవడానికి వెళ్ళారు.",
+        "దొంగలు ఎంతో సంతోషించారు. దీపాలు ఆరిపోగానే మెల్లగా బావి దగ్గరకు చేరి, పెట్టె అందుకోవడానికి బొక్కెన మీద బొక్కెన నీళ్ళు తోడడం మొదలుపెట్టారు. రాత్రంతా కష్టపడ్డారు. వాళ్ళు నేల మీద పోసిన నీళ్ళు కాలువల గుండా తోటలోకి ప్రవహించి, ప్రతి మొక్కనూ, ప్రతి చెట్టునూ తడిపేశాయి.",
+        "తెల్లవారుతుండగా అలసిపోయిన దొంగలు చివరకు పెట్టెను పైకి లాగారు. తెరిచి చూస్తే అందులో రాళ్ళు మాత్రమే ఉన్నాయి! అప్పుడే రామకృష్ణుడు బయటకు వచ్చి, “ధన్యవాదాలు మిత్రులారా! నా తోటకు ఇంత బాగా ఎప్పుడూ నీళ్ళు అందలేదు. వచ్చే వేసవిలో మళ్ళీ రండి!” అన్నాడు.",
+        "సిగ్గుపడిన దొంగలు అక్కడి నుంచి పారిపోయారు. ఈ సంగతి విన్న రాయలవారు కళ్ళలో నీళ్ళు తిరిగేలా నవ్వారు.",
+        "నీతి: చురుకైన బుద్ధి కష్టాన్ని కూడా వరంగా మార్చగలదు."
+      ]
+    },
+    {
+      "id": "story-birbal-khichdi-en", "group": "birbal-khichdi", "lang": "en", "title": "Birbal's Khichdi", "author": "Indian folk tale, retold", "genres": ["children", "folk", "humor"],
+      "desc": "Emperor Akbar denies a poor man his reward, so Birbal cooks a very strange pot of khichdi.",
+      "text": [
+        "One cold winter morning, Emperor Akbar and Birbal were walking beside a lake. Akbar dipped his finger into the icy water and quickly pulled it out. “Nobody could stand in this water for a whole night,” he said.",
+        "“A person will do almost anything for money, Your Majesty,” replied Birbal.",
+        "So Akbar announced a reward: a thousand gold coins for anyone who could stand in the lake all night long. A poor washerman took up the challenge. Through the bitter cold night he stood in the water, shivering, and in the morning he came to the court to claim his prize.",
+        "“How did you survive the cold?” asked Akbar.",
+        "“Your Majesty, a lamp was burning far away in the palace. I kept my eyes on it all night, and it gave me strength.”",
+        "“Then you were warmed by the palace lamp!” said the emperor. “That is cheating. You get no reward.” The poor man went away heartbroken.",
+        "The next day Birbal did not come to court. Akbar sent a messenger, who returned saying, “Birbal says he will come as soon as his khichdi is cooked.” Hours passed, and still Birbal did not come. At last the emperor went to Birbal's house himself.",
+        "There he found Birbal sitting beside a small fire. High above it, tied to the top of a tall bamboo pole, hung a pot of khichdi.",
+        "“Birbal, have you lost your mind?” laughed Akbar. “How can the khichdi cook when the pot is so far from the fire?”",
+        "“In the same way, Your Majesty,” said Birbal politely, “that a man standing in a freezing lake was warmed by a lamp burning far away in the palace.”",
+        "Akbar understood his mistake at once. He called back the washerman, gave him his thousand gold coins, and praised Birbal for his wisdom.",
+        "Moral: Be fair, and never deny people what they have honestly earned."
+      ]
+    },
+    {
+      "id": "story-birbal-khichdi-hi", "group": "birbal-khichdi", "lang": "hi", "title": "बीरबल की खिचड़ी", "alt": "Birbal's Khichdi", "author": "लोककथा, पुनर्कथन", "genres": ["children", "folk", "humor"],
+      "desc": "बादशाह अकबर एक ग़रीब का इनाम रोक लेते हैं, तब बीरबल एक अजीब-सी खिचड़ी पकाते हैं।",
+      "text": [
+        "जाड़े की एक ठंडी सुबह बादशाह अकबर और बीरबल एक झील के किनारे टहल रहे थे। अकबर ने बर्फ़ जैसे ठंडे पानी में उँगली डाली और झट से बाहर निकाल ली। उन्होंने कहा, “इस पानी में तो कोई पूरी रात खड़ा नहीं रह सकता।”",
+        "बीरबल ने जवाब दिया, “जहाँपनाह, पैसों के लिए आदमी कुछ भी कर सकता है।”",
+        "तब अकबर ने घोषणा करवाई: जो कोई पूरी रात झील के पानी में खड़ा रहेगा, उसे एक हज़ार सोने की मोहरें इनाम में मिलेंगी। एक ग़रीब धोबी ने यह चुनौती स्वीकार की। कड़ाके की ठंड में वह काँपता हुआ पूरी रात पानी में खड़ा रहा और सुबह इनाम माँगने दरबार में पहुँचा।",
+        "अकबर ने पूछा, “तुम इतनी ठंड कैसे सह पाए?”",
+        "धोबी बोला, “हुज़ूर, दूर महल में एक दीया जल रहा था। मैं पूरी रात उसी को देखता रहा, और उसी से मुझे हिम्मत मिलती रही।”",
+        "बादशाह बोले, “तो तुम्हें महल के दीये से गरमी मिल रही थी! यह तो बेईमानी है। तुम्हें कोई इनाम नहीं मिलेगा।” बेचारा धोबी दुखी मन से लौट गया।",
+        "अगले दिन बीरबल दरबार में नहीं आए। अकबर ने एक दूत भेजा, जिसने लौटकर बताया, “बीरबल कहते हैं कि खिचड़ी पकते ही आ जाएँगे।” घंटों बीत गए, पर बीरबल नहीं आए। आख़िर बादशाह ख़ुद बीरबल के घर पहुँचे।",
+        "वहाँ उन्होंने देखा कि बीरबल एक छोटी-सी आग के पास बैठे हैं, और ऊपर एक ऊँचे बाँस की चोटी पर खिचड़ी की हाँडी लटकी हुई है।",
+        "अकबर हँसकर बोले, “बीरबल, क्या तुम्हारा दिमाग़ चल गया है? हाँडी आग से इतनी दूर है, तो खिचड़ी पकेगी कैसे?”",
+        "बीरबल ने विनम्रता से कहा, “जहाँपनाह, ठीक वैसे ही जैसे बर्फ़ीली झील में खड़े आदमी को दूर महल के दीये से गरमी मिल गई थी।”",
+        "अकबर को तुरंत अपनी भूल समझ आ गई। उन्होंने धोबी को वापस बुलवाया, उसे एक हज़ार मोहरें दीं, और बीरबल की बुद्धिमानी की ख़ूब तारीफ़ की।",
+        "सीख: न्याय करो, और किसी की ईमानदारी से कमाई गई चीज़ उससे कभी मत छीनो।"
+      ]
+    },
+    {
+      "id": "story-birbal-khichdi-te", "group": "birbal-khichdi", "lang": "te", "title": "బీర్బల్ కిచిడీ", "alt": "Birbal's Khichdi", "author": "జానపద కథ, పునఃకథనం", "genres": ["children", "folk", "humor"],
+      "desc": "అక్బర్ ఒక పేదవాడి బహుమతిని నిరాకరిస్తాడు. అప్పుడు బీర్బల్ ఒక విచిత్రమైన కిచిడీ వండుతాడు.",
+      "text": [
+        "చలికాలంలో ఒక చల్లని ఉదయం అక్బర్ చక్రవర్తి, బీర్బల్ ఒక సరస్సు ఒడ్డున నడుస్తున్నారు. అక్బర్ మంచులా చల్లగా ఉన్న నీటిలో వేలు ముంచి వెంటనే బయటకు తీశాడు. “ఈ నీటిలో రాత్రంతా ఎవరూ నిలబడలేరు” అన్నాడు.",
+        "“ప్రభూ, డబ్బు కోసం మనిషి ఏదైనా చేస్తాడు” అని బీర్బల్ జవాబిచ్చాడు.",
+        "అప్పుడు అక్బర్ ఒక చాటింపు వేయించాడు: రాత్రంతా సరస్సు నీటిలో నిలబడగలిగిన వారికి వెయ్యి బంగారు నాణేలు బహుమతి. ఒక పేద చాకలి ఆ సవాలును స్వీకరించాడు. ఎముకలు కొరికే చలిలో వణుకుతూ రాత్రంతా నీటిలో నిలబడ్డాడు. ఉదయం బహుమతి కోసం సభకు వచ్చాడు.",
+        "“ఇంత చలిని ఎలా తట్టుకున్నావు?” అని అక్బర్ అడిగాడు.",
+        "“ప్రభూ, దూరంగా రాజభవనంలో ఒక దీపం వెలుగుతూ ఉంది. రాత్రంతా నేను దాన్నే చూస్తూ ఉన్నాను. అదే నాకు ధైర్యం ఇచ్చింది” అన్నాడు చాకలి.",
+        "“అయితే నీకు రాజభవనం దీపం నుంచి వెచ్చదనం అందింది! ఇది మోసం. నీకు బహుమతి లేదు” అన్నాడు చక్రవర్తి. పాపం ఆ చాకలి గుండె పగిలి వెళ్ళిపోయాడు.",
+        "మరుసటి రోజు బీర్బల్ సభకు రాలేదు. అక్బర్ ఒక దూతను పంపాడు. “కిచిడీ ఉడకగానే వస్తానని బీర్బల్ చెప్పారు” అని దూత తిరిగి వచ్చి చెప్పాడు. గంటలు గడిచినా బీర్బల్ రాలేదు. చివరకు చక్రవర్తే స్వయంగా బీర్బల్ ఇంటికి వెళ్ళాడు.",
+        "అక్కడ బీర్బల్ ఒక చిన్న మంట దగ్గర కూర్చుని ఉన్నాడు. దానికి ఎంతో ఎత్తులో, ఒక పొడవాటి వెదురు కర్ర చివర కిచిడీ కుండ వేలాడుతోంది.",
+        "“బీర్బల్, నీకు మతి పోయిందా? కుండ మంటకు ఇంత దూరంలో ఉంటే కిచిడీ ఎలా ఉడుకుతుంది?” అని అక్బర్ నవ్వాడు.",
+        "“ప్రభూ, గడ్డకట్టే సరస్సులో నిలబడిన మనిషికి దూరంగా రాజభవనంలో వెలిగే దీపం నుంచి వెచ్చదనం అందినట్టే” అని బీర్బల్ వినయంగా అన్నాడు.",
+        "అక్బర్‌కు వెంటనే తన తప్పు అర్థమైంది. ఆ చాకలిని మళ్ళీ పిలిపించి వెయ్యి బంగారు నాణేలు ఇచ్చాడు. బీర్బల్ తెలివిని ఎంతో మెచ్చుకున్నాడు.",
+        "నీతి: న్యాయంగా ఉండాలి. ఒకరు కష్టపడి సంపాదించుకున్నదాన్ని ఎప్పుడూ వారి నుంచి లాక్కోకూడదు."
+      ]
+    }
+  ]
+}

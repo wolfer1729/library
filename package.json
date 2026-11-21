@@ -1,0 +1,19 @@
+{
+  "name": "granthalaya",
+  "version": "1.0.0",
+  "description": "A multilingual library (English, Hindi, Telugu): read classic novels and stories, listen to audiobooks or have any book read aloud, and add your own books.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node scripts/check-catalog.js",
+    "download": "node scripts/download-all.js",
+    "assets": "node scripts/fetch-assets.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT",
+  "private": true
+}

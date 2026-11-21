@@ -1,0 +1,7 @@
+node_modules/
+# Downloaded book texts and LibriVox lookups (re-created automatically)
+data/cache/
+# Books you upload
+data/uploads/
+*.part
+*.tmp
