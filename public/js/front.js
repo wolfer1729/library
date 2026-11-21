@@ -411,8 +411,19 @@
 
   // ---------------------------------------------------------------- live numbers
   if (!isFile && window.fetch) {
-    fetch('api/catalog')
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    // With the server running: /api/catalog. On the website version (GitHub Pages): books/catalog.json.
+    var getJSON = function (url) {
+      return fetch(url).then(function (r) {
+        if (!r.ok || (r.headers.get('content-type') || '').indexOf('json') < 0) throw new Error(r.status);
+        return r.json();
+      });
+    };
+    getJSON('api/catalog')
+      .catch(function () {
+        var secure = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+        if ('serviceWorker' in navigator && secure) navigator.serviceWorker.register('sw.js').catch(function () {});
+        return getJSON('books/catalog.json');
+      })
       .then(function (data) {
         var books = data.books || [];
         var live = { total: books.length, readable: 0, genres: (data.genres || []).length, langs: { en: [0, 0], hi: [0, 0], te: [0, 0] }, perGenre: {} };

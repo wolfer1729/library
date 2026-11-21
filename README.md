@@ -68,6 +68,32 @@ data/uploads/        books you add
 - **First open of a book:** Gutenberg books download in a few seconds. Wikisource books arrive chapter by chapter, about 4–7 seconds per chapter (a long novel such as *Godaan* takes about 4 minutes in total), because Wikisource limits request speed. You can start reading once the first chapter appears. After that, every book opens instantly from `data/cache/`.
 - **PDF and EPUB reading** happens in your browser, using local copies of pdf.js and JSZip in `public/vendor/`.
 
+## Website version (GitHub Pages)
+
+The library also runs as a plain website, with no server: **https://wolfer1729.github.io/library/**
+
+- Open it on any phone or computer. On a phone, use the browser menu → **Add to Home screen**.
+- On the library home page, **Download all books** (about 50 MB) saves every book in that browser so it works without internet. Books you open are also kept automatically.
+- **Add a book** works too, but the book is stored only in that browser on that device (IndexedDB). It is never uploaded to the website, so it doesn't appear on your other devices.
+- Narrated audiobooks stream from LibriVox. Saving audiobooks for offline use needs the computer version (`start.bat`).
+
+To publish an update, run `npm run download` (to include any new books), then:
+
+```bash
+npm run deploy
+```
+
+This builds the site into `dist/` (`npm run build:site`) and pushes it to the `gh-pages` branch. GitHub Pages serves that branch (Settings → Pages → *Deploy from a branch* → `gh-pages`, folder `/ (root)`).
+
+## On your phone
+
+1. On the computer, double-click **`start-phone.bat`**. Optionally choose a password (recommended on shared Wi-Fi). Allow Node.js through the Windows firewall if asked.
+2. The window lists addresses like `http://192.168.5.122:3000`. Open one in your phone's browser; the phone must be on the same Wi-Fi.
+3. If you set a password, type any user name and the password.
+4. In the browser menu choose **Add to Home screen** to get an app icon.
+
+The computer must stay on with the window open. If Windows marks your Wi-Fi as a *Public* network, the firewall blocks phones. On your own home Wi-Fi, set it to *Private* (Settings → Network & internet → Wi-Fi → your network). With **Tailscale** on both the computer and the phone, the `100.x.x.x` address also works away from home, over mobile data. Read aloud on Android uses the phone's own voices, which include Hindi and Telugu.
+
 ## Using it offline (no internet)
 
 Download everything once, while you have internet:

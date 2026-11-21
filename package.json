@@ -9,7 +9,9 @@
     "dev": "node --watch server.js",
     "check": "node scripts/check-catalog.js",
     "download": "node scripts/download-all.js",
-    "assets": "node scripts/fetch-assets.js"
+    "assets": "node scripts/fetch-assets.js",
+    "build:site": "node scripts/build-static.js",
+    "deploy": "node scripts/deploy-pages.js"
   },
   "engines": {
     "node": ">=18.17"

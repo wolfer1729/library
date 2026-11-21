@@ -2,7 +2,7 @@ import fsp from 'node:fs/promises';
 import path from 'node:path';
 import * as uploads from './uploads.js';
 import { HttpError, readJSONFile, writeJSONAtomic } from './util.js';
-import { splitPlainText } from './textproc.js';
+import { splitPlainText } from '../public/js/textproc.js';
 import { fetchGutenberg, stripGutenberg, gutenbergUrl } from './gutenberg.js';
 import { crawlWikisource, wikisourceUrl } from './wikisource.js';
 import { findAudiobook } from './librivox.js';

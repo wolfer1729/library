@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 import path from 'node:path';
 import { UA, readJSONFile, writeJSONAtomic, sleep } from './util.js';
-import { htmlToBlocks, extractNext } from './textproc.js';
+import { htmlToBlocks, extractNext } from '../public/js/textproc.js';
 
 // Wikimedia rate-limits aggressive clients, so all Wikisource requests share one slow, serial queue.
 const GAP_MS = 1100;

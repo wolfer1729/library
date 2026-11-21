@@ -1,4 +1,6 @@
 node_modules/
+# Built website (published to the gh-pages branch by "npm run deploy")
+dist/
 # Downloaded book texts and LibriVox lookups (re-created automatically)
 data/cache/
 # Books you upload

@@ -1,5 +1,5 @@
 import { t, getUiLang, setUiLang, langName, genreLabel, UI_LANGS } from './i18n.js';
-import { api } from './api.js';
+import { api, isStatic, device, detectMode } from './api.js';
 import { $, $$, esc, store, debounce, toast, parseHash, fmtTime, fmtSize } from './util.js';
 import { icons } from './icons.js';
 import { coverHTML } from './covers.js';
@@ -177,6 +177,7 @@ function viewHome() {
       </div>
       <div class="hero-actions"><a class="btn btn-lg" href="#/add">${icons.upload}<span>${esc(t('addBook'))}</span></a></div>
     </section>
+    ${isStatic() && device.supported() ? `<section class="panel device-panel" data-device></section>` : ''}
     ${langChipsHTML(all)}
     <nav class="chips scroll" aria-label="${esc(t('genres'))}">${state.genres
       .map((g) => {
@@ -190,6 +191,47 @@ function viewHome() {
     ${footerHTML()}
   </div>`;
   bindLangChips(view, viewHome);
+  const panel = $('[data-device]', view);
+  if (panel) mountDevicePanel(panel);
+}
+
+// Website version: keep every book in this browser so the library works without internet.
+let deviceJob = null; // survives page changes while downloading
+function mountDevicePanel(panel) {
+  const ids = state.books.filter((b) => b.hasText && !b.upload).map((b) => b.id);
+  const render = async () => {
+    if (!panel.isConnected) return;
+    if (deviceJob) {
+      const pct = Math.round((deviceJob.done / deviceJob.total) * 100);
+      panel.innerHTML = `<div class="panel-body device-row"><div class="spinner"></div><span>${esc(t('deviceDownloading', { n: deviceJob.done, total: deviceJob.total }))}</span><div class="bar" style="flex-basis:100%"><i style="width:${pct}%"></i></div></div>`;
+      return;
+    }
+    const saved = (await device.savedIds()).size;
+    const all = saved >= ids.length;
+    panel.innerHTML = `<div class="panel-body device-row">
+      ${all ? icons.check : icons.download}
+      <span><b>${esc(t('deviceTitle'))}</b><br>${esc(all ? t('deviceDone') : t('deviceStatus', { n: Math.min(saved, ids.length), total: ids.length }))} ${esc(t('deviceHint'))}</span>
+      ${all ? '' : `<button type="button" class="btn btn-sm" data-dl-all>${icons.download}<span>${esc(t('deviceDownloadAll', { size: '≈ 50 MB' }))}</span></button>`}
+      ${saved ? `<button type="button" class="btn btn-sm btn-ghost" data-dl-remove>${icons.trash}<span>${esc(t('deviceRemove'))}</span></button>` : ''}
+    </div>`;
+  };
+  panel.addEventListener('click', async (e) => {
+    if (e.target.closest('[data-dl-all]') && !deviceJob) {
+      deviceJob = { done: 0, total: ids.length };
+      render();
+      const failed = await device.saveAll(ids, (done, total) => {
+        deviceJob = { done, total };
+        if (done % 5 === 0 || done === total) render();
+      });
+      deviceJob = null;
+      if (failed.length) toast(t('deviceSomeFailed', { n: failed.length }), 'error');
+      render();
+    } else if (e.target.closest('[data-dl-remove]') && confirm(t('deviceConfirmRemove'))) {
+      await device.removeAll();
+      render();
+    }
+  });
+  render();
 }
 
 function gridPage({ title, sub, list, pool, sortable = true, query, rerender, emptyText }) {
@@ -314,7 +356,10 @@ function viewBook(id) {
   }
   if (b.upload) {
     actions.push(`<a class="btn btn-ghost" href="#/edit/${enc}">${icons.edit}<span>${esc(t('edit'))}</span></a>`);
-    if (b.original) actions.push(`<a class="btn btn-ghost" href="${esc(b.original.url)}?download" download>${icons.download}<span>${esc(t('downloadOriginal'))}</span></a>`);
+    if (b.original) {
+      const dl = b.original.url.startsWith('blob:') ? b.original.url : `${b.original.url}?download`;
+      actions.push(`<a class="btn btn-ghost" href="${esc(dl)}" download="${esc(b.original.name)}">${icons.download}<span>${esc(t('downloadOriginal'))}</span></a>`);
+    }
     actions.push(`<button type="button" class="btn btn-danger" data-delete>${icons.trash}<span>${esc(t('delete'))}</span></button>`);
   }
 
@@ -346,9 +391,10 @@ function viewBook(id) {
         ${!b.hasText ? `<div class="note warn">${icons.lock}<div><b>${esc(t('catalogOnlyTitle'))}</b><br>${esc(t('catalogOnlyHelp'))} <a href="${esc(findUrl)}" target="_blank" rel="noopener">${esc(t('findOnline'))} ${icons.external}</a></div></div>` : ''}
         <div class="actions">${actions.join('')}</div>
         ${source ? `<div class="source">${source}</div>` : ''}
-        ${b.hasText && (b.sourceType === 'gutenberg' || b.sourceType === 'wikisource')
+        ${b.hasText && (b.sourceType === 'gutenberg' || b.sourceType === 'wikisource') && !isStatic()
           ? `<div class="source offline-state ${b.offline ? 'yes' : ''}">${b.offline ? icons.check : icons.download}<span>${esc(b.offline ? t('textSaved') : t('textNotSaved'))}</span></div>`
           : ''}
+        ${b.hasText && !b.upload && isStatic() && device.supported() ? `<div class="source offline-state" data-device-state></div>` : ''}
         ${siblings.length ? `<div class="translations">${esc(t('alsoIn'))} ${siblings.map((s) => `<a class="chip" href="#/book/${encodeURIComponent(s.id)}" lang="${scriptLang(s)}">${esc(langName(s.lang))}</a>`).join('')}</div>` : ''}
         ${b.hasText ? `<section class="panel" data-audio aria-live="polite"></section>` : ''}
       </div>
@@ -371,6 +417,15 @@ function viewBook(id) {
       toast(e.message, 'error');
     }
   });
+
+  const ds = $('[data-device-state]', view);
+  if (ds) {
+    device.isSaved(b.id).then((saved) => {
+      if (!ds.isConnected) return;
+      ds.classList.toggle('yes', saved);
+      ds.innerHTML = `${saved ? icons.check : icons.download}<span>${esc(saved ? t('textOnDevice') : t('textOnlineOnly'))}</span>`;
+    });
+  }
 
   const panel = $('[data-audio]', view);
   if (panel) return mountAudioPanel(panel, b);
@@ -407,7 +462,7 @@ function mountAudioPanel(panel, b) {
 
   // Saving LibriVox recordings on this computer so they play without internet.
   function offlineRow(ab) {
-    if (ab.source !== 'librivox') return '';
+    if (ab.source !== 'librivox' || isStatic()) return '';
     if (ab.offline === 'ready') {
       return `<div class="panel-body offline-row yes">${icons.check}<span>${esc(t('audioSaved', { size: fmtSize(ab.bytes || 0) }))}</span>
         <button type="button" class="btn btn-sm btn-ghost" data-offline-remove>${icons.trash}<span>${esc(t('removeDownload'))}</span></button></div>`;
@@ -598,6 +653,13 @@ async function afterSave(book) {
 
 player.init();
 renderTopbar();
+// Website version: a service worker keeps the app (and saved books) working without internet.
+detectMode().then((m) => {
+  const secure = location.protocol === 'https:' || ['localhost', '127.0.0.1'].includes(location.hostname);
+  if (m === 'static' && 'serviceWorker' in navigator && secure) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+});
 $('[data-skip]')?.addEventListener('click', (e) => {
   e.preventDefault();
   view.focus();

@@ -1,5 +1,5 @@
 import { t, langName, genreLabel, getUiLang } from './i18n.js';
-import { api } from './api.js';
+import { api, isStatic } from './api.js';
 import { $, esc, toast, fmtSize } from './util.js';
 import { icons } from './icons.js';
 import { coverHTML } from './covers.js';
@@ -33,6 +33,7 @@ export function mountUpload(el, { genres, edit = null, forBook = null, onSaved }
       <p>${esc(edit ? t('editBookSub') : t('addBookSub'))}</p>
     </div>
     ${forBook ? `<div class="note">${icons.info}<div>${t('addingCopyOf', { title: `<b lang="${esc(forBook.lang)}">${esc(forBook.title)}</b>` })}</div></div>` : ''}
+    ${isStatic() ? `<div class="note">${icons.lock}<div>${esc(t('uploadsLocalNote'))}</div></div>` : ''}
     <form class="form-grid" novalidate>
       <section class="box a-file">
         <h2><span class="step">1</span>${esc(t('stepFile'))}</h2>

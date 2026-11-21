@@ -1,4 +1,6 @@
 import http from 'node:http';
+import os from 'node:os';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { sendJSON, sendError, serveFile, readJSON, HttpError } from './server/util.js';
@@ -9,6 +11,23 @@ const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(ROOT, 'public');
 const PORT = Number(process.env.PORT) || 3000;
 const HOST = process.env.HOST || '127.0.0.1';
+// Optional password for other devices (phones etc.). The computer running the server never needs it.
+const PASSWORD = process.env.LIBRARY_PASSWORD || '';
+
+function isLocal(req) {
+  const ip = req.socket.remoteAddress || '';
+  return ip === '127.0.0.1' || ip === '::1' || ip === '::ffff:127.0.0.1';
+}
+
+function authorized(req) {
+  if (!PASSWORD || isLocal(req)) return true;
+  const m = /^Basic\s+(.+)$/i.exec(req.headers.authorization || '');
+  if (!m) return false;
+  const decoded = Buffer.from(m[1], 'base64').toString('utf8');
+  const given = Buffer.from(decoded.slice(decoded.indexOf(':') + 1));
+  const want = Buffer.from(PASSWORD);
+  return given.length === want.length && crypto.timingSafeEqual(given, want);
+}
 
 const count = await catalog.init(ROOT);
 
@@ -90,6 +109,11 @@ async function serveStatic(req, res, pathname) {
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+  if (!authorized(req)) {
+    res.writeHead(401, { 'WWW-Authenticate': 'Basic realm="Granthalaya library", charset="UTF-8"', 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('This library is password-protected. Any user name works; enter the library password.');
+    return;
+  }
   try {
     const method = req.method === 'HEAD' ? 'GET' : req.method;
     for (const [m, re, handler] of routes) {
@@ -112,4 +136,12 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, HOST, () => {
   const shown = HOST === '0.0.0.0' ? 'localhost' : HOST;
   console.log(`Granthalaya is running with ${count} catalogue books → http://${shown}:${PORT}`);
+  if (HOST === '0.0.0.0') {
+    const addrs = Object.entries(os.networkInterfaces())
+      .flatMap(([name, list]) => (list || []).filter((a) => a.family === 'IPv4' && !a.internal).map((a) => ({ name, ip: a.address })))
+      .filter((a) => !a.ip.startsWith('169.254.'));
+    console.log('\nOpen one of these on your phone (it must be on the same Wi-Fi, or on Tailscale for 100.x addresses):');
+    for (const a of addrs) console.log(`   http://${a.ip}:${PORT}    (${a.name})`);
+    console.log(PASSWORD ? '\nPassword protection is ON: any user name, then the library password.' : '\nNo password is set: anyone on this network can open the library.');
+  }
 });

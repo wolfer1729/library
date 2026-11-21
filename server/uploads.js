@@ -2,7 +2,7 @@ import fsp from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { HttpError, readJSONFile, writeJSONAtomic, streamToFile } from './util.js';
-import { splitPlainText, sanitizeChapters } from './textproc.js';
+import { splitPlainText, sanitizeChapters } from '../public/js/textproc.js';
 
 // Each uploaded book lives in data/uploads/<id>/ with meta.json, content.json and its files.
 

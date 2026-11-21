@@ -166,7 +166,7 @@ svg.i { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
 
 /* hero */
 .hero { padding: 36px 0 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: end; }
-@media (min-width: 721px) { .hero-actions { display: none; } }
+@media (min-width: 721px) { .hero .hero-actions { display: none; } }
 .hero h1 { font-family: var(--font-display); font-weight: 650; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.06; letter-spacing: -0.02em; margin: 0 0 10px; max-width: 18ch; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero p { margin: 0; color: var(--ink-2); font-size: 17px; max-width: 60ch; }
@@ -302,6 +302,10 @@ svg.i { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
 .tracks li.now button { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .tracks .n { color: var(--ink-3); font-variant-numeric: tabular-nums; font-size: 13px; }
 .tracks .d { color: var(--ink-3); font-variant-numeric: tabular-nums; font-size: 13px; }
+.device-panel { max-width: none; margin-top: 8px; }
+.device-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.device-row > span { flex: 1; min-width: 220px; line-height: 1.5; }
+.device-row > svg.i { color: var(--accent); width: 22px; height: 22px; }
 .offline-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-top: 1px solid var(--line); }
 .offline-row > span { flex: 1; min-width: 180px; }
 .offline-row.yes svg.i, .offline-state.yes svg.i { color: var(--accent); }
